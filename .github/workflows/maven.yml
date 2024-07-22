@@ -21,7 +21,7 @@ jobs:
         path: target/
 
     - name: Deploy to Github Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-main@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./target/site
