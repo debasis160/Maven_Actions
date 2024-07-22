@@ -76,7 +76,7 @@
    <repository>
      <id>github</id>
      <name>GitHub NishkarshRaj Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/nishkarshraj/maven_actions</url>
+     <url>https://maven.pkg.github.com/debasis160/maven_actions</url>
    </repository>
 </distributionManagement>
 </project>
