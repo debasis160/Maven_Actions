@@ -26,9 +26,8 @@ jobs:
         paths: "target/**/TEST-*.xml"
       if: always()
 
-    - uses: dorny/test-reporter@v1
+    - name: HTML Preview
+      id: html_preview
+      uses: pavi2410/html-preview-action@v2
       with:
-        artifact: test-results            # artifact name
-        name: JEST Tests                  # Name of the check run which will be created
-        path: "target/**/TEST-*.xml"      # Path to test results (inside artifact .zip)
-        reporter: jest-junit 
+        html_file: 'target/site/index.html'
