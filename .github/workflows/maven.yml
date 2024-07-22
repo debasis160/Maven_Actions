@@ -20,8 +20,8 @@ jobs:
         name: target-directory
         path: target/
 
-    - name: Deploy to Github Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Test Summary
+      uses: test-summary/action@v2
       with:
-        github_token: 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
-        publish_dir: ./target/site
+        paths: "target/**/TEST-*.xml"
+      if: always()
