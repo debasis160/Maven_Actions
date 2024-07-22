@@ -30,7 +30,7 @@
     <server>
       <id>github</id>
       <username>debasis160</username>
-      <password>${{ secrets.GH_TOKEN }}</password>
+      <password>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</password>
     </server>
   </servers>
 </settings>
